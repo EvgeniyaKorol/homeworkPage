@@ -521,6 +521,7 @@ ReactDOM.render(
             <ScreenshotsArea/>
             <ScreenshotsArea/>
             <ScreenshotsArea/>
+            <ScreenshotsArea/>
         </div>
         </div>
 

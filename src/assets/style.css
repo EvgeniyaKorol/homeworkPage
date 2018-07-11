@@ -74,10 +74,11 @@ body {
   background-image: url('images/arrow.png');
   background-position: right center;
   background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
   border: none;
   color: #333366;
   font-size: 55px;
-  padding: 0 10%;
   font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
   font-stretch: ultra-condensed;
 }
@@ -160,12 +161,12 @@ body {
   display: flex;
   overflow-x: auto;
   overflow-y: auto;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 75px;
 }
 .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot {
   min-width: 75px;

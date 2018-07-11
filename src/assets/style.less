@@ -72,18 +72,17 @@ body {
                 text-transform: uppercase;
             }
             select {
-                
                 //margin-left: 10px;
                 appearance: none !important;
                 background-image: url('./images/arrow.png');
                 background-position: right center;
                 background-repeat: no-repeat;
-                // width: 80px;
-                // height: 80px;
+                width: 80px;
+                height: 80px;
                 border: none;
                 color: #333366;
                 font-size: 55px;
-                padding: 0 10%;
+                //padding: 0 10%;
                 //font-weight: bold;
                 font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
                 font-stretch: ultra-condensed;
@@ -173,12 +172,12 @@ body {
             display: flex;
             overflow-x: auto;
             overflow-y: auto;
-            flex-direction: column;
+            flex-direction: row;
             margin-left: 75px;
             .screenshots-wrap {
                 .screenshots {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     .empty-screenshot {
                         min-width: 75px;
                         min-height: 50px;
