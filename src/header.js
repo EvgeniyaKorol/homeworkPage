@@ -1,7 +1,7 @@
-/**
- * Created by Eugenia on 06.07.2018.
- */
 import React, {Component} from 'react';
+
+import logo from './assets/images/logo.png';
+
 class Header extends Component {
 
     constructor(props) {
@@ -10,14 +10,14 @@ class Header extends Component {
 
     render() {
         return (
-            <div className="header-wrap">;
+            <div className="header-wrap">
                 <div className="header">
                     <div className="title">
                         <span>homework</span>
                     </div>
                     <div className="logo">
                         <a href="">
-                            <img src="assets/images/logo.png" alt="logo"/>
+                            <img src={logo} alt="logo"/>
                         </a>
                     </div>
                 </div>

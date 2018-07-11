@@ -13,15 +13,13 @@ class GroupSelector extends Component {
 
     render() {
         return (
-            <div className="group-info-block">
             <div className="group-number">
                 <span>кмб</span>
                 <select>
-                    <option>4</option>
+                    <option>14</option>
                     <option>5</option>
                     <option>6</option>
                 </select>
-            </div>
             </div>
         );
     }

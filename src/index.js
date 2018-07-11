@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/style.css';
 import registerServiceWorker from './registerServiceWorker';
 import Header from "./header";
 import GroupSelector from "./groupSelector";
 import StudentsArray from "./studentsArray";
+import Topics from './topics';
+import ScreenshotsArea from './screenshotsArea';
+
 
 var state = {
     groups: [
@@ -494,10 +497,33 @@ var state = {
 };
 
 ReactDOM.render(
-    <div>
+    <div className="wrapper">
         <Header/>
-        <GroupSelector/>
-        <StudentsArray/>
+        <div className="group-info-block">
+            <GroupSelector/>
+            <StudentsArray/>
+        </div>
+        <div className="tasks-screenshots-block">
+        <div className="topics-block">
+            <Topics/>
+            <Topics/>
+            <Topics/>
+            <Topics/>
+
+        </div>
+        <div className="screenshots-block">
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+            <ScreenshotsArea/>
+        </div>
+        </div>
+
     </div>
    , document.getElementById('root'));
 registerServiceWorker();
