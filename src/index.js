@@ -13,7 +13,7 @@ var state = {
     groups: [
         {
             id: '1',
-            name: 'kmb1',
+            name: 'KMB 1',
             students: [
                 {
                     id: '1',
@@ -97,7 +97,7 @@ var state = {
                 },
                 {
                     id: '6',
-                    name: 'Максим Даникович',
+                    studentName: 'Максим Даникович',
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
@@ -112,7 +112,7 @@ var state = {
                 },
                 {
                     id: '7',
-                    name: 'Артем Пиврик',
+                    studentName: 'Артем Пиврик',
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
@@ -174,7 +174,7 @@ var state = {
         },
         {
             id: '2',
-            name: 'kmb2',
+            name: 'JS 3',
             students: [
                 {
                     id: '1',
@@ -300,7 +300,7 @@ var state = {
         },
         {
             id: '3',
-            name: 'kmb3',
+            name: 'C++ 3',
             students: [
                 {
                     id: '1',
@@ -445,7 +445,7 @@ var state = {
         {
             id: '1',
             name: 'html',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Введение'
@@ -459,12 +459,12 @@ var state = {
         {
             id: '2',
             name: 'CSS',
-            subtopics: []
+            tasks: []
         },
         {
             id: '3',
             name: 'Slider',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Slider V1'
@@ -478,7 +478,7 @@ var state = {
         {
             id: '4',
             name: 'Calculator',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Calc V1'
@@ -493,39 +493,55 @@ var state = {
                 }
             ]
         }
-    ]
+    ],
+
 };
 
 ReactDOM.render(
     <div className="wrapper">
         <Header/>
         <div className="group-info-block">
-            <GroupSelector/>
-            <StudentsArray/>
+            <GroupSelector groups={state.groups.map(g => {
+                return {
+                    name: g.name
+                }
+            })}
+            />
+            <StudentsArray students={state.groups[0].students.map(s => {
+                return {
+                    name: s.name,
+                    avatar: s.avatar
+                }
+            })}
+            />
         </div>
-        <div className="tasks-screenshots-block">
-        <div className="topics-block">
-            <Topics/>
-            <Topics/>
-            <Topics/>
-            <Topics/>
 
-        </div>
-        <div className="screenshots-block">
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-        </div>
+        <div className="tasks-screenshots-block">
+            <div className="topics-block">
+                <Topics topics={state.topics.map(t => {
+                    return {
+                        name: t.name,
+                        tasks: t.tasks
+                    }
+                })}/>
+
+
+            </div>
+            <div className="screenshots-block">
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+                <ScreenshotsArea/>
+            </div>
         </div>
 
     </div>
-   , document.getElementById('root'));
+    , document.getElementById('root'));
 registerServiceWorker();
 
 

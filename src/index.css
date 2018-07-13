@@ -81,6 +81,11 @@ body .group-info-block .group-info-wrap .student-info .student .avatar {
     border-radius: 50px;
     margin-bottom: 10px;
 }
+
+body .group-info-block .group-info-wrap .student-info .student .avatar img {
+    width: 100%;
+}
+
 body .tasks-screenshots-block {
     background-color: aqua;
     border: 3px dotted #ff00ee;

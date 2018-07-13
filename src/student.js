@@ -10,15 +10,14 @@ class Student extends Component {
     }
 
     render() {
+        var {student} = this.props;
         return (
             <div className="student">
                 <div className="avatar">
-                    <img src="" alt="" className=""/>
+                    <img src={student.avatar} alt="" className=""/>
                 </div>
-                <p className="student-name">Константин</p>
+                <p className="student-name"> {student.name} </p>
             </div>
-
-          
         );
     }
 }

@@ -6,9 +6,10 @@ class Task extends Component {
     }
 
     render() {
+        var {task} = this.props;
         return (
             <div className="task">
-            <span>calculator-1</span>
+            <span>{task}</span>
         </div>
         );
     }
