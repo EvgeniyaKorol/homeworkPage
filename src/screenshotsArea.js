@@ -10,16 +10,11 @@ class ScreenshotsArea extends Component {
         return (
         <div className="screenshots-wrap">
             <div className="screenshots">
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
-              <ScreenshotItem/>
+                {this.props.screenShots.map(s => {
+                    return (
+                        <ScreenshotItem screen={s} />
+                    )
+                })}
             </div>
         </div>
         );

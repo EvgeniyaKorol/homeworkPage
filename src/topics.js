@@ -9,23 +9,22 @@ class Topics extends Component {
 
     render() {
         return (
-                <div className="topics"> {this.props.topics.map(t => {return(
-                    <div className="topic">
-                        <span>{t.name}</span>
 
+            this.props.topics.map(t => {
+                return (
+                    <div className="topics">
+                        <div className="topic">
+                            <span>{t.name}</span>
+                        </div>
 
-                        {t.tasks.map(tsk => {return (
-                            <Task task={tsk.name}/>
-                        )})}
-
-
+                        {t.tasks.map(tsk => {
+                            return <Task task={tsk.name}/>;
+                        })}
                     </div>
-                )})}
-                    {/*<Topic/>*/}
-                    {/*<Task/>*/}
-                    {/*<Task/>*/}
-                    {/*<Task/>*/}
-                </div>
+                )
+            })
+
+
         );
     }
 }
