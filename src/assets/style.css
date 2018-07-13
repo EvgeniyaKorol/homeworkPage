@@ -75,10 +75,10 @@ body {
   background-image: url('images/arrow.png');
   background-position: right center;
   background-repeat: no-repeat;
-  width: 95px;
+  width: 135px;
   border: none;
   color: #333366;
-  font-size: 55px;
+  font-size: 35px;
   padding: 0 5%;
   font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
   font-stretch: ultra-condensed;
@@ -95,7 +95,7 @@ body {
   border-bottom: 3px solid #666699;
   box-sizing: border-box;
   margin-left: 60px;
-  height: 180px;
+  height: 190px;
 }
 .wrapper .group-info-block .group-info-wrap .student-info {
   display: flex;
@@ -113,8 +113,10 @@ body {
   height: 75px;
   border: 1px solid #333366;
   border-radius: 50px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
+}
+.wrapper .group-info-block .group-info-wrap .student-info .student p.student-name {
+  text-align: center;
+  line-height: 22px;
 }
 .wrapper .tasks-screenshots-block {
   margin-top: 10px;
@@ -171,11 +173,15 @@ body {
   flex-direction: column;
 }
 .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot {
-  min-width: 75px;
-  min-height: 50px;
+  width: 75px;
+  height: 50px;
   border: #333366 dotted 1px;
   box-sizing: border-box;
   margin: 5px 20px;
+}
+.wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot img.screenshot {
+  width: 75px;
+  height: 50px;
 }
 .wrapper .screenshotsPopup {
   position: absolute;

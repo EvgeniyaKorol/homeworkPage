@@ -549,7 +549,7 @@ ReactDOM.render(
                 {/*<ScreenshotsArea/>*/}
             </div>
         </div>
-        <StudentScrenshotsPopup/>
+        {/* <StudentScrenshotsPopup/> */}
     </div>
 
     , document.getElementById('root'));
