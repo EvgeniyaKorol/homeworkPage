@@ -1,8 +1,5 @@
-/**
- * Created by Eugenia on 06.07.2018.
- */
-
 import React, {Component} from 'react';
+import avatar from './assets/images/avatar.jpg';
 class Student extends Component {
 
     constructor(props) {
@@ -13,7 +10,7 @@ class Student extends Component {
         return (
             <div className="student">
                 <div className="avatar">
-                    <img src="" alt="" className=""/>
+                    <img src={avatar} alt="" className="" />
                 </div>
                 <p className="student-name">Константин</p>
             </div>

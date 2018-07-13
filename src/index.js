@@ -7,6 +7,7 @@ import GroupSelector from "./groupSelector";
 import StudentsArray from "./studentsArray";
 import Topics from './topics';
 import ScreenshotsArea from './screenshotsArea';
+import StudentScrenshotsPopup from './screenshotsPopup';
 
 
 var state = {
@@ -524,7 +525,7 @@ ReactDOM.render(
             <ScreenshotsArea/>
         </div>
         </div>
-
+        <StudentScrenshotsPopup/>
     </div>
    , document.getElementById('root'));
 registerServiceWorker();

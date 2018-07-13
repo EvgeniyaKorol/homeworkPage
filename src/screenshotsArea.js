@@ -20,6 +20,9 @@ class ScreenshotsArea extends Component {
               <ScreenshotItem/>
               <ScreenshotItem/>
               <ScreenshotItem/>
+              <ScreenshotItem/>
+              <ScreenshotItem/>
+              <ScreenshotItem/>
             </div>
         </div>
         );
