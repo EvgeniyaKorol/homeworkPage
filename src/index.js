@@ -14,7 +14,7 @@ var state = {
     groups: [
         {
             id: '1',
-            name: 'kmb1',
+            name: 'KMB 1',
             students: [
                 {
                     id: '1',
@@ -22,15 +22,15 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -42,11 +42,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -57,11 +57,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -72,11 +72,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -87,41 +87,41 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
                 },
                 {
                     id: '6',
-                    name: 'Максим Даникович',
+                    studentName: 'Максим Даникович',
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
                 },
                 {
                     id: '7',
-                    name: 'Артем Пиврик',
+                    studentName: 'Артем Пиврик',
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -132,11 +132,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -147,11 +147,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -162,11 +162,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -175,7 +175,7 @@ var state = {
         },
         {
             id: '2',
-            name: 'kmb2',
+            name: 'JS 3',
             students: [
                 {
                     id: '1',
@@ -183,11 +183,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -198,11 +198,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -213,11 +213,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -228,11 +228,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -243,11 +243,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -258,11 +258,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -273,11 +273,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -288,11 +288,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -301,7 +301,7 @@ var state = {
         },
         {
             id: '3',
-            name: 'kmb3',
+            name: 'C++ 3',
             students: [
                 {
                     id: '1',
@@ -309,11 +309,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -324,11 +324,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -339,11 +339,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -354,11 +354,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -369,11 +369,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -384,11 +384,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -399,11 +399,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -414,11 +414,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -429,11 +429,11 @@ var state = {
                     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
                     screenshots: [
                         {
-                            topicId: '1',
+                            taskId: '1',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         },
                         {
-                            topicId: '2',
+                            taskId: '2',
                             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
                         }
                     ]
@@ -446,7 +446,7 @@ var state = {
         {
             id: '1',
             name: 'html',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Введение'
@@ -460,12 +460,12 @@ var state = {
         {
             id: '2',
             name: 'CSS',
-            subtopics: []
+            tasks: []
         },
         {
             id: '3',
             name: 'Slider',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Slider V1'
@@ -479,7 +479,7 @@ var state = {
         {
             id: '4',
             name: 'Calculator',
-            subtopics: [
+            tasks: [
                 {
                     id: '1',
                     name: 'Calc V1'
@@ -494,40 +494,65 @@ var state = {
                 }
             ]
         }
-    ]
+    ],
+
+    selectedGroupId: '1'
+
 };
 
 ReactDOM.render(
     <div className="wrapper">
         <Header/>
         <div className="group-info-block">
-            <GroupSelector/>
-            <StudentsArray/>
+            <GroupSelector groups={state.groups.map(g => {
+                return {
+                    name: g.name
+                }
+            })}
+            />
+            <StudentsArray students={state.groups[0].students.map(s => {
+                return {
+                    name: s.name,
+                    avatar: s.avatar
+                }
+            })}
+            />
         </div>
-        <div className="tasks-screenshots-block">
-        <div className="topics-block">
-            <Topics/>
-            <Topics/>
-            <Topics/>
-            <Topics/>
 
-        </div>
-        <div className="screenshots-block">
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-        </div>
+        <div className="tasks-screenshots-block">
+            <div className="topics-block">
+                <Topics topics={state.topics.map(t => {
+                    return {
+                        name: t.name,
+                        tasks: t.tasks
+                    }
+                })}/>
+
+
+            </div>
+            <div className="screenshots-block">
+                <ScreenshotsArea screenShots={state.groups[state.selectedGroupId].students[0].screenshots.map(s => {
+                    return {
+                        taskId: s.taskId,
+                        src: s.src
+                    }
+                })}
+                
+                />
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+                {/*<ScreenshotsArea/>*/}
+            </div>
         </div>
         <StudentScrenshotsPopup/>
     </div>
-   , document.getElementById('root'));
+
+    , document.getElementById('root'));
 registerServiceWorker();
 
 

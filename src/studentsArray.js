@@ -11,19 +11,25 @@ class StudentsArray extends Component {
 
     render() {
         return (
-                <div className="group-info-wrap">
-                    <div className="student-info">
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
-                        <Student />
+            <div className="group-info-wrap">
+                <div className="student-info">
+                     {this.props.students.map(s => {
+                        return (
+                        <Student student={s} />
+                        )
+                    })}
+
                     </div>
+
+
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
+                    {/*<Student />*/}
                 </div>
         );
     }

@@ -14,11 +14,9 @@ class GroupSelector extends Component {
     render() {
         return (
             <div className="group-number">
-                <span>кмб</span>
+                {/*<span>кмб</span>*/}
                 <select>
-                    <option>14</option>
-                    <option>5</option>
-                    <option>6</option>
+                    {this.props.groups.map(g => {return (<option> {g.name} </option>)})}
                 </select>
             </div>
         );
