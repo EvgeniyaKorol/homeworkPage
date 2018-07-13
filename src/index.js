@@ -539,21 +539,9 @@ ReactDOM.render(
                 <ScreenshotsArea/>
             </div>
         </div>
-        <div className="screenshots-block">
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-            <ScreenshotsArea/>
-        </div>
-        </div>
 
     </div>
+    
     , document.getElementById('root'));
 registerServiceWorker();
 
