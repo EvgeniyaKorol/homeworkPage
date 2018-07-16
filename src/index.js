@@ -440,7 +440,6 @@ var state = {
             ]
         }
     ],
-
     topics: [
         {
             id: '1',
