@@ -1,8 +1,5 @@
-/**
- * Created by Eugenia on 06.07.2018.
- */
-
 import React, {Component} from 'react';
+import avatar from './assets/images/avatar.jpg';
 class Student extends Component {
 
     constructor(props) {
