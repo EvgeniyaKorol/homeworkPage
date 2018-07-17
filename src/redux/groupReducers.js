@@ -1,19 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './assets/style.css';
-import registerServiceWorker from './registerServiceWorker';
-import Header from "./header";
-import GroupSelector from "./groupSelector";
-import StudentsArray from "./studentsArray";
-import Topics from './topics';
-import ScreenshotsArea from './screenshotsArea';
-import StudentScrenshotsPopup from './screenshotsPopup';
+/**
+ * Created by Eugenia on 16.07.2018.
+ */
+import * as types from "./actionTypes";
 
-
-import {store} from './redux/store';
-
-
-var state = {
+const initialState = {
     groups: [
         {
             id: '1',
@@ -443,121 +433,16 @@ var state = {
                 }
             ]
         }
-    ],
-    topics: [
-        {
-            id: '1',
-            name: 'html',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Введение'
-                },
-                {
-                    id: '2',
-                    name: 'Страничка ВК'
-                }
-            ]
-        },
-        {
-            id: '2',
-            name: 'CSS',
-            tasks: []
-        },
-        {
-            id: '3',
-            name: 'Slider',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Slider V1'
-                },
-                {
-                    id: '2',
-                    name: 'Slider V2 Конструктор'
-                }
-            ]
-        },
-        {
-            id: '4',
-            name: 'Calculator',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Calc V1'
-                },
-                {
-                    id: '2',
-                    name: 'Calc V2'
-                },
-                {
-                    id: '3',
-                    name: 'Calc V3'
-                }
-            ]
-        }
-    ],
-
-    selectedGroupId: '1'
-
+    ]
 };
 
-ReactDOM.render(
-    <div className="wrapper">
-        <Header/>
-        <div className="group-info-block">
-            <GroupSelector groups={state.groups.map(g => {
-                return {
-                    name: g.name
-                }
-            })}
-            />
-            <StudentsArray students={state.groups[0].students.map(s => {
-                return {
-                    name: s.name,
-                    avatar: s.avatar
-                }
-            })}
-            />
-        </div>
+export const groups = (state = initialState, action) => {
+    switch (action.type) {
+        case types.CHANGE_GROUP:
+            return {
 
-        <div className="tasks-screenshots-block">
-            <div className="topics-block">
-                <Topics topics={state.topics.map(t => {
-                    return {
-                        name: t.name,
-                        tasks: t.tasks
-                    }
-                })}/>
-
-
-            </div>
-            <div className="screenshots-block">
-                <ScreenshotsArea screenShots={state.groups[state.selectedGroupId].students[0].screenshots.map(s => {
-                    return {
-                        taskId: s.taskId,
-                        src: s.src
-                    }
-                })}
-                
-                />
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-            </div>
-        </div>
-        {/* <StudentScrenshotsPopup/> */}
-    </div>
-
-    , document.getElementById('root'));
-registerServiceWorker();
-
-console.log (store.getState());
-
-
-
+            };
+        default:
+            return state
+    }
+};
