@@ -1,11 +1,10 @@
 /**
  * Created by Eugenia on 16.07.2018.
  */
-import * as types from "./actionTypes";
+import * as types from "./groupActionTypes";
 
 const initialState = {
-    topics: [
-        {
+    topic1: {
             id: '1',
             name: 'html',
             tasks: [
@@ -19,12 +18,12 @@ const initialState = {
                 }
             ]
         },
-        {
+    topic2: {
             id: '2',
             name: 'CSS',
             tasks: []
         },
-        {
+    topic3: {
             id: '3',
             name: 'Slider',
             tasks: [
@@ -38,7 +37,7 @@ const initialState = {
                 }
             ]
         },
-        {
+    topic4: {
             id: '4',
             name: 'Calculator',
             tasks: [
@@ -56,7 +55,7 @@ const initialState = {
                 }
             ]
         }
-    ]
+
 };
 
 export const topics = (state = initialState, action) => {

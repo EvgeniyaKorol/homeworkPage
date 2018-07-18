@@ -1,7 +1,7 @@
 /**
  * Created by Eugenia on 16.07.2018.
  */
-import * as types from "./actionTypes";
+import * as types from "./groupActionTypes";
 
 const initialState = {
         selectedGroup: "1",

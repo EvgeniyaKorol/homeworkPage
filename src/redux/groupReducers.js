@@ -1,11 +1,10 @@
 /**
  * Created by Eugenia on 16.07.2018.
  */
-import * as types from "./actionTypes";
+import * as types from "./groupActionTypes";
 
 const initialState = {
-    groups: [
-        {
+    group1: {
             id: '1',
             name: 'KMB 1',
             students: [
@@ -166,7 +165,7 @@ const initialState = {
                 }
             ]
         },
-        {
+    group2: {
             id: '2',
             name: 'JS 3',
             students: [
@@ -292,7 +291,7 @@ const initialState = {
                 }
             ]
         },
-        {
+    group3: {
             id: '3',
             name: 'C++ 3',
             students: [
@@ -433,7 +432,6 @@ const initialState = {
                 }
             ]
         }
-    ]
 };
 
 export const groups = (state = initialState, action) => {
