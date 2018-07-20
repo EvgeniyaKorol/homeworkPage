@@ -10,6 +10,7 @@ import ScreenshotsArea from './screenshotsArea';
 import StudentScrenshotsPopup from './screenshotsPopup';
 
 
+
 var state = {
     groups: [
         {
@@ -537,18 +538,10 @@ ReactDOM.render(
                         src: s.src
                     }
                 })}
-                
                 />
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
-                {/*<ScreenshotsArea/>*/}
             </div>
         </div>
+
         {/* <StudentScrenshotsPopup/> */}
     </div>
 
