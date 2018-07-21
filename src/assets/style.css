@@ -1,17 +1,31 @@
 html,
 body {
-  height: 100%;
   margin: 0 auto;
 }
 #root {
   height: 100%;
 }
 .none-visible {
-  visibility: hidden;
+  display: none !important;
+}
+select {
+  appearance: none !important;
+  direction: ltr;
+  padding: 0 5px;
+  border: none;
+  color: #333366;
+  font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: ultra-condensed;
+}
+select:focus {
+  outline: none;
+}
+select option {
+  font-size: 30px;
 }
 .wrapper {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   color: #333366;
   display: flex;
   flex-direction: column;
@@ -31,11 +45,19 @@ body {
   height: 100px;
 }
 .wrapper .header-wrap .header .title {
+  background-color: #35375c;
   font-family: 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
   font-stretch: ultra-condensed;
   font-size: 60px;
   text-transform: uppercase;
   color: #fff;
+  font-weight: lighter;
+}
+.wrapper .header-wrap .header .title option {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-stretch: ultra-condensed;
   font-weight: lighter;
 }
 .wrapper .header-wrap .header .logo {
@@ -52,15 +74,15 @@ body {
 }
 .wrapper .group-info-block .group-number {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 120px;
-  min-width: 230px;
+  min-width: 240px;
   border-top: 1px solid #333366;
   border-bottom: 1px solid #333366;
   border-right: 1px solid #333366;
   border-radius: 0 7px 7px 0;
-  margin: 20px 10px 0 0;
+  margin: 20px 0 0 0;
 }
 .wrapper .group-info-block .group-number span {
   color: #333366;
@@ -70,24 +92,21 @@ body {
   text-transform: uppercase;
   margin-right: 15px;
 }
-.wrapper .group-info-block .group-number select {
-  appearance: none !important;
-  background-image: url('images/arrow.png');
-  background-position: right center;
-  background-repeat: no-repeat;
-  width: 135px;
-  border: none;
-  color: #333366;
-  font-size: 35px;
-  padding: 0 5%;
-  font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
-  font-stretch: ultra-condensed;
+.wrapper .group-info-block .group-number select.group-heading {
+  font-size: 30px;
+  padding: 0;
+  margin: 0 20px 0 35px;
 }
-.wrapper .group-info-block .group-number select:focus {
-  outline: none;
+.wrapper .group-info-block .group-number select.group-heading option {
+  font-size: 20px;
 }
-.wrapper .group-info-block .group-number select option {
-  font-size: 25px;
+.wrapper .group-info-block .group-number select.number {
+  font-size: 50px;
+  padding: 0 40px 0 0;
+  direction: rtl;
+}
+.wrapper .group-info-block .group-number select.number option {
+  font-size: 20px;
 }
 .wrapper .group-info-block .group-info-wrap {
   overflow-y: hidden;
@@ -116,7 +135,7 @@ body {
 }
 .wrapper .group-info-block .group-info-wrap .student-info .student p.student-name {
   text-align: center;
-  line-height: 22px;
+  line-height: 20px;
 }
 .wrapper .tasks-screenshots-block {
   margin-top: 10px;
@@ -131,6 +150,7 @@ body {
   overflow-x: hidden;
   min-width: 245px;
   padding-top: 5px;
+  background-color: #fff;
 }
 .wrapper .tasks-screenshots-block .topics-block .topics {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -142,7 +162,7 @@ body {
   align-items: center;
   justify-content: center;
   align-content: center;
-  min-height: 50px;
+  height: 50px;
   margin-bottom: 10px;
   background-color: #333366;
 }
@@ -171,6 +191,7 @@ body {
 .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot {
   width: 75px;
@@ -179,7 +200,12 @@ body {
   box-sizing: border-box;
   margin: 5px 20px;
 }
-.wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot img.screenshot {
+.wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .screenshot-item {
+  width: 75px;
+  height: 50px;
+  margin: 5px 20px;
+}
+.wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .screenshot-item img.screenshot {
   width: 75px;
   height: 50px;
 }
@@ -190,47 +216,62 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  width: 700px;
-  height: 600px;
+  width: 1000px;
+  min-width: 300px;
+  height: 650px;
   box-shadow: 0 0 15px #000000;
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
 .wrapper .screenshotsPopup .screenshotsPopup-header {
-  height: 100px;
-  padding: 0 30px;
+  min-height: 110px;
+  padding: 0 90px;
   background-color: #35375c;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.wrapper .screenshotsPopup .screenshotsPopup-header span.task {
+.wrapper .screenshotsPopup .screenshotsPopup-header select.task-title {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   text-transform: uppercase;
   color: #fff;
+  background-color: #35375c;
+}
+.wrapper .screenshotsPopup .screenshotsPopup-header select.task-title option {
+  font-size: 18px;
 }
 .wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info {
   align-self: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  width: 50%;
 }
-.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info span.group {
+.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.group {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
+  background-color: #35375c;
+  direction: rtl;
 }
-.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info .student-name {
+.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.group option {
+  font-size: 18px;
+}
+.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.student-name {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
   color: #fff;
-  line-height: 0px;
+  background-color: #35375c;
+  direction: rtl;
+}
+.wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.student-name option {
+  font-size: 14px;
 }
 .wrapper .screenshotsPopup .screenshotsPopup-header .student-avatar {
   width: 75px;
   height: 75px;
   background: #fff;
-  border: 1px solid #fff;
   border-radius: 50px;
   box-sizing: border-box;
 }
@@ -239,8 +280,8 @@ body {
   height: 75px;
 }
 .wrapper .screenshotsPopup .screenshotsPopup-header span.close-btn {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: #cc0000;
   position: absolute;
   top: 0;
@@ -250,6 +291,65 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
+}
+.wrapper .screenshotsPopup .student-screenshots {
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 25px;
+}
+.wrapper .screenshotsPopup .student-screenshots .student-screenshot {
+  margin: 10px 10px 15px 10px;
+}
+.wrapper .screenshotsPopup .student-screenshots .student-screenshot img.screenshot {
+  min-width: 150px;
+  min-height: 105px;
+  border: 1px solid #333366;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.wrapper .screenshotsPopup .student-screenshots .student-screenshot p.date {
+  font-size: 12px;
+  text-align: center;
+  line-height: 0px;
+  margin: 0;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block {
+  height: 100%;
+  display: flex;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .screenshot-big-size {
+  box-sizing: border-box;
+  background-color: black;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .screenshot-big-size img {
+  width: 100%;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .comments {
+  box-sizing: border-box;
+  width: 30%;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .comments .send-comment {
+  background-color: #dedeee;
+  padding: 20px 10px;
+  border-bottom: 1px solid #898cc1;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .comments .send-comment textarea.message {
+  width: 75%;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  font-family: Arial, sans-serif, Arial, sans-serif;
+  font-size: 13px;
+  resize: none;
+  caret-color: #35375c;
+}
+.wrapper .screenshotsPopup .screenshot-coments-block .comments .send-comment textarea.message:focus {
+  outline: none;
 }
 @media screen and (max-width: 767px) {
   .wrapper .header-wrap {
@@ -263,8 +363,8 @@ body {
     background-color: #fff;
     height: 80px;
     min-width: 180px;
-    margin: 7px 0 0 0;
-    left: -160px;
+    margin: 13px 0 0 0;
+    left: -220px;
   }
   .wrapper .group-info-block .group-number span {
     font-size: 30px;
@@ -272,14 +372,14 @@ body {
   }
   .wrapper .group-info-block .group-number select {
     background-image: none;
-    width: 75px;
-    font-size: 45px;
+    width: auto;
+    font-size: 20px;
     padding: 0 0 0 25px;
   }
   .wrapper .group-info-block .group-info-wrap {
     border-bottom: 2px solid #666699;
     margin-left: 0px;
-    height: 150px;
+    height: 160px;
     margin-left: 20px;
   }
   .wrapper .group-info-block .group-info-wrap .student-info .student {
@@ -291,21 +391,23 @@ body {
     height: 65px;
     margin-bottom: 5px;
   }
+  .wrapper .group-info-block .group-info-wrap .student-info .student p.student-name {
+    line-height: 20px;
+  }
   .wrapper .tasks-screenshots-block {
     margin-top: 10px;
     height: 100%;
     position: relative;
   }
   .wrapper .tasks-screenshots-block .topics-block {
-    left: -160px;
-    min-width: 180px;
+    left: -225px;
     position: absolute;
     height: 100%;
     top: 0px;
     bottom: 0;
   }
   .wrapper .tasks-screenshots-block .topics-block .topics .topic {
-    min-height: 40px;
+    height: 40px;
     margin-bottom: 10px;
   }
   .wrapper .tasks-screenshots-block .topics-block .topics .task {
@@ -316,8 +418,70 @@ body {
     height: 100%;
   }
   .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .empty-screenshot {
-    min-width: 70px;
-    min-height: 40px;
-    margin: 5px 15px;
+    width: 70px;
+    height: 40px;
+    margin: 5px 20px;
   }
+  .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .screenshot-item {
+    width: 70px;
+    height: 40px;
+    margin: 5px 20px;
+  }
+  .wrapper .tasks-screenshots-block .screenshots-block .screenshots-wrap .screenshots .screenshot-item img.screenshot {
+    width: 70px;
+    height: 40px;
+  }
+  .wrapper .screenshotsPopup {
+    width: 95%;
+    height: 70%;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header {
+    min-height: 90px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header select.task-title {
+    font-size: 27px;
+    direction: ltr;
+    margin: 5px 0;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info {
+    width: 100%;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.group {
+    display: none;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header .sudent-info select.student-name {
+    color: #fff;
+    font-size: 17px;
+    direction: ltr;
+    margin: 5px 0;
+  }
+  .wrapper .screenshotsPopup .screenshotsPopup-header .student-avatar {
+    display: none;
+  }
+  .wrapper .screenshotsPopup .student-screenshots {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 0px;
+  }
+  .wrapper .screenshotsPopup .student-screenshots .student-screenshot {
+    margin: 10px 10px 15px 10px;
+  }
+  .wrapper .screenshotsPopup .student-screenshots .student-screenshot img.screenshot {
+    min-width: 220px;
+    min-height: 150px;
+  }
+}
+.screenshot-full-size {
+  overflow: auto;
+  width: 70%;
+}
+.screenshot-full-size .screenshot-coments-block .screenshot-big-size {
+  overflow: auto;
+}
+.screenshot-full-size .screenshot-coments-block .screenshot-big-size img {
+  width: auto;
 }

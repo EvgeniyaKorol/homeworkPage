@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ScreenshotItem from './screenshotItem';
+import EmptyScreenshot from './emptyScreenshot';
+
 class ScreenshotsArea extends Component {
     
     constructor(props) {
@@ -15,6 +17,11 @@ class ScreenshotsArea extends Component {
                         <ScreenshotItem screen={s} />
                     )
                 })}
+                <EmptyScreenshot/>
+                <EmptyScreenshot/>
+                <EmptyScreenshot/>
+                <EmptyScreenshot/>
+                <EmptyScreenshot/>
             </div>
         </div>
         );

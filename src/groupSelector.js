@@ -1,9 +1,3 @@
-/**
- * Created by Eugenia on 06.07.2018.
- */
-/**
- * Created by Eugenia on 06.07.2018.
- */
 import React, {Component} from 'react';
 class GroupSelector extends Component {
 
@@ -14,9 +8,14 @@ class GroupSelector extends Component {
     render() {
         return (
             <div className="group-number">
-                {/*<span>кмб</span>*/}
-                <select>
+                <select className="group-heading">
                     {this.props.groups.map(g => {return (<option> {g.name} </option>)})}
+                </select>
+                <select className="number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>14</option>
                 </select>
             </div>
         );

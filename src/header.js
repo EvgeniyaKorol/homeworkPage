@@ -12,9 +12,11 @@ class Header extends Component {
         return (
             <div className="header-wrap">
                 <div className="header">
-                    <div className="title">
-                        <span>homework</span>
-                    </div>
+                    <select className="title">
+                        <option>homework</option>
+                        <option>video</option>
+                        <option>visits</option>
+                    </select>
                     <div className="logo">
                         <a href="">
                             <img src={logo} alt="logo"/>
