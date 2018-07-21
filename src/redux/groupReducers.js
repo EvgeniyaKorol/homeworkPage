@@ -2,12 +2,14 @@
  * Created by Eugenia on 16.07.2018.
  */
 import * as types from "./groupActionTypes";
-import {List} from 'immutable';
+import {Map, List} from 'immutable';
 
-const initialState = List([
-    {
-    id: '1',
-        name: 'KMB 1',
+const initialGroupState = List([
+    Map ({
+        id: '1',
+        name: '4',
+        courseId: '1',
+        startDate: null,
         students: [
         {
             id: '1',
@@ -16,15 +18,18 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
 
@@ -36,11 +41,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -51,11 +58,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -66,11 +75,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -81,11 +92,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -96,11 +109,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -111,11 +126,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -126,11 +143,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -141,11 +160,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -156,19 +177,22 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         }
-    ]
-},
-    {
-    id: '2',
-        name: 'JS 3',
+    ]}),
+    Map ({
+        id: '2',
+        name: '1',
+        courseId: '2',
+        startDate: null,
         students: [
         {
             id: '1',
@@ -177,11 +201,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -192,11 +218,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -207,11 +235,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -222,11 +252,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -237,11 +269,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -252,11 +286,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -267,11 +303,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -282,19 +320,23 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         }
     ]
-},
-    {
-    id: '3',
-        name: 'C++ 3',
+}),
+    Map ({
+        id: '3',
+        name: '2',
+        courseId: '3',
+        startDate: null,
         students: [
         {
             id: '1',
@@ -303,11 +345,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -318,11 +362,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -333,11 +379,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -348,11 +396,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -363,11 +413,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -378,11 +430,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -393,11 +447,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -408,11 +464,13 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         },
@@ -423,19 +481,21 @@ const initialState = List([
             screenshots: [
                 {
                     taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 },
                 {
                     taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
+                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                    date: null
                 }
             ]
         }
     ]
-}])
+})])
 ;
 
-export const groups = (state = initialState, action) => {
+export const groups = (state = initialGroupState, action) => {
     switch (action.type) {
         case types.CHANGE_GROUP:
             return {
