@@ -1,7 +1,6 @@
 /**
  * Created by Eugenia on 16.07.2018.
  */
-import * as types from "./groupActionTypes";
 import {Map, List} from 'immutable';
 
 const initialGroupState = List([
@@ -36,7 +35,7 @@ const initialGroupState = List([
         },
         {
             id: '2',
-            name: 'Дмитрий Кузюбердин',
+            name: '4 Дмитрий Кузюбердин',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
             screenshots: [
                 {
@@ -191,12 +190,12 @@ const initialGroupState = List([
     Map ({
         id: '2',
         name: '1',
-        courseId: '2',
+        courseId: '1',
         startDate: null,
         students: [
         {
             id: '1',
-            name: 'Иван Иванов',
+            name: '1  Иван Иванов',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
             screenshots: [
                 {
@@ -335,12 +334,12 @@ const initialGroupState = List([
     Map ({
         id: '3',
         name: '2',
-        courseId: '3',
+        courseId: '1',
         startDate: null,
         students: [
         {
             id: '1',
-            name: 'Евгений Богдан',
+            name: '2 Евгений Богдан',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
             screenshots: [
                 {
@@ -497,10 +496,8 @@ const initialGroupState = List([
 
 export const groups = (state = initialGroupState, action) => {
     switch (action.type) {
-        case types.CHANGE_GROUP:
-            return {
 
-            };
+
         default:
             return state
     }

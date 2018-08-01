@@ -18,35 +18,41 @@ store.subscribe(() => {
     render();
 });
 
-let selectedCourse = state.uiState.get('selectedCourseId');
-let selectedGroup = state.uiState.get('selectedGroupId');
-let group = state.groups.get(selectedGroup);
-let students = group.get('students');
 
-let coursesForSelector = state.courses.map(g => {
-    return {
-        name: g.get("name")
-    }
-});
-
-let groupsForSelector = state.groups.filter(group => group.get('courseId') === selectedCourse).map(g => {
-    return {
-        name: g.get("name")
-    }
-});
 
 function render() {
+debugger;
+    let selectedCourse = state.uiState.get('selectedCourseId');
+    let selectedGroup = state.uiState.get('selectedGroupId');
+    let group =  state.groups.filter(g => g.get("id") == selectedGroup).get(0);
+    let students = group.get('students');
+
+    let coursesForSelector = state.courses.map(g => {
+        return {
+            name: g.get("name"),
+            id: g.get("id")
+        }
+    });
+
+    let groupsForSelector = state.groups.filter(group => group.get('courseId') === selectedCourse).map(g => {
+        return {
+            name: g.get("name"),
+            id: g.get("id")
+        }
+    });
+
+
     ReactDOM.render(
         <div className="wrapper">
             <Header/>
             <div className="group-info-block">
-                <GroupSelector courses={coursesForSelector} groups={groupsForSelector} />
+                <GroupSelector courses={coursesForSelector} groups={groupsForSelector} store={store} />
                 <StudentsArray students={students.map(s => {
                     return {
                         name: s.name,
                         avatar: s.avatar
                     }
-                })}
+                })} store={store}
                 />
             </div>
 
