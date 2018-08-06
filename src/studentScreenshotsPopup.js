@@ -41,7 +41,7 @@ class StudentScrenshotsPopup extends Component {
                     </div>
                     <span class="close-btn"></span>
                 </div>
-                <div className="student-screenshots none-visible">
+                <div className="student-screenshots  none-visible">
                     <div className="student-screenshot">
                         <img src="" alt="" className="screenshot" />
                         <p className="date">01.07.2018</p>
@@ -115,7 +115,7 @@ class StudentScrenshotsPopup extends Component {
                         <p className="date">01.07.2018</p>
                     </div>
                 </div>
-                <div className="screenshot-coments-block">
+                <div className="screenshot-coments-block ">
                     <div className="screenshot-big-size">
                         <img src={screenshot} alt=""/>
                     </div>

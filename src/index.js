@@ -7,10 +7,12 @@ import GroupSelector from "./groupSelector";
 import StudentsArray from "./studentsArray";
 import Topics from './topics';
 import ScreenshotsArea from './screenshotsArea';
-import StudentScrenshotsPopup from './screenshotsPopup';
-
-
+import StudentScrenshotsPopup from './studentScreenshotsPopup';
 import {store} from './redux/store';
+import TaskHeader from "./taskHeader";
+import TaskInformation from "./taskInformation";
+import CommentsBlock from "./commentsBlock"
+import TestPage from "./components/testPage/testPageComponent"
 
 
 var state = {
@@ -502,51 +504,72 @@ var state = {
 
 };
 
-ReactDOM.render(
-    <div className="wrapper">
-        <Header/>
-        <div className="group-info-block">
-            <GroupSelector groups={state.groups.map(g => {
-                return {
-                    name: g.name
-                }
-            })}
-            />
-            <StudentsArray students={state.groups[0].students.map(s => {
-                return {
-                    name: s.name,
-                    avatar: s.avatar
-                }
-            })}
-            />
+// ReactDOM.render(
+//     <div className="wrapper">
+//         <Header/>
+//         <div className="group-info-block">
+//             <GroupSelector groups={state.groups.map(g => {
+//                 return {
+//                     name: g.name
+//                 }
+//             })}
+//             />
+//             <StudentsArray students={state.groups[0].students.map(s => {
+//                
+
+//                     name: s.name,
+//                     avatar: s.avatar
+//                 }
+//             })}
+//             />
+//         </div>
+
+//         <div className="tasks-screenshots-block">
+//             <div className="topics-block">
+//                 <Topics topics={state.topics.map(t => {
+//                     return {
+//                         name: t.name,
+//                         tasks: t.tasks
+//                     }
+//                 })}/>
+//             </div>
+//             <div className="screenshots-block">
+//                 <ScreenshotsArea screenShots={state.groups[state.selectedGroupId].students[0].screenshots.map(s => {
+//                     return {
+//                         taskId: s.taskId,
+//                         src: s.src
+//                     }
+//                 })}
+//                 />
+//             </div>
+//         </div>
+
+//         {/* <StudentScrenshotsPopup/> */}
+//     </div>
+
+//     , document.getElementById('root'));
+
+    // ReactDOM.render(
+    //     <div className="task-description-page">
+    //         <TaskHeader/>
+    //         <div className="task-description-wrap">
+    //             <TaskInformation/>
+    //             <CommentsBlock/>
+    //         </div>
+    //     </div>
+       
+    
+    //     , document.getElementById('root'));
+
+
+ ReactDOM.render(
+        <div className="test-page">
+          <TestPage/>
         </div>
+       
+    
+        , document.getElementById('root'));
 
-        <div className="tasks-screenshots-block">
-            <div className="topics-block">
-                <Topics topics={state.topics.map(t => {
-                    return {
-                        name: t.name,
-                        tasks: t.tasks
-                    }
-                })}/>
-
-
-            </div>
-            <div className="screenshots-block">
-                <ScreenshotsArea screenShots={state.groups[state.selectedGroupId].students[0].screenshots.map(s => {
-                    return {
-                        taskId: s.taskId,
-                        src: s.src
-                    }
-                })}
-                />
-            </div>
-        </div>
-
-        {/* <StudentScrenshotsPopup/> */}
-    </div>
-
-    , document.getElementById('root'));
 registerServiceWorker();
 
 console.log (store.getState());
