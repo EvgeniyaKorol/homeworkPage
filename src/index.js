@@ -15,564 +15,81 @@ import CommentsBlock from "./commentsBlock"
 import TestPage from "./components/testPage/testPageComponent"
 
 
-var state = {
-    groups: [
-        {
-            id: '1',
-            name: 'KMB 1',
-            students: [
-                {
-                    id: '1',
-                    name: 'Евгения Король',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
+let state = store.getState();
 
-                },
-                {
-                    id: '2',
-                    name: 'Дмитрий Кузюбердин',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '3',
-                    name: 'Александра Зверко',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '4',
-                    name: 'Кирилл Ашуркевич',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '5',
-                    name: 'Денис Нестерук',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '6',
-                    name: 'Максим Даникович',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '7',
-                    name: 'Артем Пиврик',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '8',
-                    name: 'Артем Феденков',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '9',
-                    name: 'Дмитрий Сугако',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '10',
-                    name: 'Александра Зверко',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            id: '2',
-            name: 'JS 3',
-            students: [
-                {
-                    id: '1',
-                    name: 'Иван Иванов',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '2',
-                    name: 'Петр Сидоров',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '3',
-                    name: 'Николай Никонов',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '4',
-                    name: 'Михаил Михич',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '5',
-                    name: 'Петр Петрович',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '6',
-                    name: 'Анна Акимова',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '7',
-                    name: 'Катерина Котова',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '8',
-                    name: 'Артем Артемьев',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            id: '3',
-            name: 'C++ 3',
-            students: [
-                {
-                    id: '1',
-                    name: 'Евгений Богдан',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '2',
-                    name: 'Дмитрий Савицкий',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '3',
-                    name: 'Александра Кош',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '4',
-                    name: 'Кирилл Долгий',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '5',
-                    name: 'Денис Мельник',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '6',
-                    name: 'Максим Кук',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '7',
-                    name: 'Артем Ким',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '8',
-                    name: 'Артем Федоров',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                },
-                {
-                    id: '9',
-                    name: 'Дмитрий Принт',
-                    avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-space-astronaut.png',
-                    screenshots: [
-                        {
-                            taskId: '1',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        },
-                        {
-                            taskId: '2',
-                            src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png'
-                        }
-                    ]
-                }
-            ]
+store.subscribe(() => {
+    state = store.getState();
+    render();
+});
+
+
+
+function render() {
+debugger;
+    let selectedCourse = state.uiState.get('selectedCourseId');
+    let selectedGroup = state.uiState.get('selectedGroupId');
+    let group =  state.groups.filter(g => g.get("id") == selectedGroup).get(0);
+    let students = group.get('students');
+
+    let coursesForSelector = state.courses.map(g => {
+        return {
+            name: g.get("name"),
+            id: g.get("id")
         }
-    ],
-    topics: [
-        {
-            id: '1',
-            name: 'html',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Введение'
-                },
-                {
-                    id: '2',
-                    name: 'Страничка ВК'
-                }
-            ]
-        },
-        {
-            id: '2',
-            name: 'CSS',
-            tasks: []
-        },
-        {
-            id: '3',
-            name: 'Slider',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Slider V1'
-                },
-                {
-                    id: '2',
-                    name: 'Slider V2 Конструктор'
-                }
-            ]
-        },
-        {
-            id: '4',
-            name: 'Calculator',
-            tasks: [
-                {
-                    id: '1',
-                    name: 'Calc V1'
-                },
-                {
-                    id: '2',
-                    name: 'Calc V2'
-                },
-                {
-                    id: '3',
-                    name: 'Calc V3'
-                }
-            ]
+    });
+
+    let groupsForSelector = state.groups.filter(group => group.get('courseId') === selectedCourse).map(g => {
+        return {
+            name: g.get("name"),
+            id: g.get("id")
         }
-    ],
-
-    selectedGroupId: '1'
-
-};
-
-// ReactDOM.render(
-//     <div className="wrapper">
-//         <Header/>
-//         <div className="group-info-block">
-//             <GroupSelector groups={state.groups.map(g => {
-//                 return {
-//                     name: g.name
-//                 }
-//             })}
-//             />
-//             <StudentsArray students={state.groups[0].students.map(s => {
-//                
-
-//                     name: s.name,
-//                     avatar: s.avatar
-//                 }
-//             })}
-//             />
-//         </div>
-
-//         <div className="tasks-screenshots-block">
-//             <div className="topics-block">
-//                 <Topics topics={state.topics.map(t => {
-//                     return {
-//                         name: t.name,
-//                         tasks: t.tasks
-//                     }
-//                 })}/>
-//             </div>
-//             <div className="screenshots-block">
-//                 <ScreenshotsArea screenShots={state.groups[state.selectedGroupId].students[0].screenshots.map(s => {
-//                     return {
-//                         taskId: s.taskId,
-//                         src: s.src
-//                     }
-//                 })}
-//                 />
-//             </div>
-//         </div>
-
-//         {/* <StudentScrenshotsPopup/> */}
-//     </div>
-
-//     , document.getElementById('root'));
-
-    // ReactDOM.render(
-    //     <div className="task-description-page">
-    //         <TaskHeader/>
-    //         <div className="task-description-wrap">
-    //             <TaskInformation/>
-    //             <CommentsBlock/>
-    //         </div>
-    //     </div>
-       
-    
-    //     , document.getElementById('root'));
+    });
 
 
- ReactDOM.render(
-        <div className="test-page">
-          <TestPage/>
-        </div>
-       
-    
-        , document.getElementById('root'));
+    ReactDOM.render(
+        <div className="wrapper">
+            <Header/>
+            <div className="group-info-block">
+                <GroupSelector courses={coursesForSelector} groups={groupsForSelector} store={store} />
+                <StudentsArray students={students.map(s => {
+                    return {
+                        name: s.name,
+                        avatar: s.avatar
+                    }
+                })} store={store}
+                />
+            </div>
 
+            <div className="tasks-screenshots-block">
+                <div className="topics-block">
+                    <Topics topics={state.topics.map(t => {
+                        return {
+                            name: t.name,
+                            tasks: t.tasks
+                        }
+                    })}/>
+
+
+                </div>
+                <div className="screenshots-block">
+                    <ScreenshotsArea screenShots={students[0].screenshots.map(s => {
+                        return {
+                            taskId: s.taskId,
+                            src: s.src
+                        }
+                    })}
+                    />
+                </div>
+            </div>
+
+            {/* <StudentScrenshotsPopup/> */}
+        </div>, document.getElementById('root'));
+}
+
+render();
 registerServiceWorker();
 
-console.log (store.getState());
+
 
 
 

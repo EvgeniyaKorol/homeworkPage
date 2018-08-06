@@ -16,16 +16,6 @@ class StudentsArray extends Component {
                     })}
 
                     </div>
-
-
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
-                    {/*<Student />*/}
                 </div>
         );
     }
