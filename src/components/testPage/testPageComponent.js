@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../index.css';
+import '../../style.css';
 import Header from '../../header'
 import StudentsArray from '../../studentsArray'
 

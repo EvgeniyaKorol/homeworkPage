@@ -29,7 +29,6 @@ select {
   direction: ltr;
   padding: 0 5px;
   border: none;
-  background-color: #35375c;
   color: #333366;
   font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
   font-stretch: ultra-condensed;
@@ -100,6 +99,7 @@ select option {
   border-right: 1px solid #333366;
   border-radius: 0 7px 7px 0;
   margin: 20px 0 0 0;
+  background-color: #fff;
 }
 .wrapper .group-info-block .group-number span {
   color: #333366;
@@ -304,7 +304,6 @@ select option {
   top: 0;
   right: 0;
   margin: 5px;
-  background-image: url(../assets/images/close-btn.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
@@ -412,7 +411,7 @@ select option {
     height: 80px;
     min-width: 180px;
     margin: 13px 0 0 0;
-    left: -220px;
+    left: -210px;
   }
   .wrapper .group-info-block .group-number span {
     font-size: 30px;
@@ -448,7 +447,7 @@ select option {
     position: relative;
   }
   .wrapper .tasks-screenshots-block .topics-block {
-    left: -225px;
+    left: -220px;
     position: absolute;
     height: 100%;
     top: 0px;
