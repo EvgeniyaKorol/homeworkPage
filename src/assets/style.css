@@ -1,12 +1,28 @@
 html,
 body {
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 #root {
   height: 100%;
 }
+.screenshot-full-size {
+  overflow: auto;
+  width: 70%;
+}
+.screenshot-full-size .screenshot-coments-block .screenshot-big-size {
+  overflow: auto;
+}
+.screenshot-full-size .screenshot-coments-block .screenshot-big-size img {
+  width: auto;
+}
 .none-visible {
   display: none !important;
+}
+.not-active {
+  background-color: #d5d5d5 !important;
+  color: #ececec !important;
 }
 select {
   appearance: none !important;
@@ -83,6 +99,7 @@ select option {
   border-right: 1px solid #333366;
   border-radius: 0 7px 7px 0;
   margin: 20px 0 0 0;
+  background-color: #fff;
 }
 .wrapper .group-info-block .group-number span {
   color: #333366;
@@ -287,7 +304,6 @@ select option {
   top: 0;
   right: 0;
   margin: 5px;
-  background-image: url(../assets/images/close-btn.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
@@ -297,7 +313,7 @@ select option {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 20px 0 20px 25px;
+  padding: 20px 0 20px 60px;
 }
 .wrapper .screenshotsPopup .student-screenshots .student-screenshot {
   margin: 10px 10px 15px 10px;
@@ -351,6 +367,37 @@ select option {
 .wrapper .screenshotsPopup .screenshot-coments-block .comments .send-comment textarea.message:focus {
   outline: none;
 }
+.task-description-page .task-header-wrap {
+  padding: 5px;
+  background-color: #35375c;
+}
+.task-description-page .task-header-wrap .task-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 100px;
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+}
+.task-description-page .task-header-wrap .task-header .task-title {
+  background-color: #35375c;
+  font-family: 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: ultra-condensed;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: lighter;
+}
+.task-description-page .task-header-wrap .task-header .logo {
+  display: flex;
+}
+.task-description-page .task-header-wrap .task-header .logo a img {
+  width: 85%;
+}
+.task-description-page .task-description-wrap .task-description h1 {
+  font-size: 16px;
+}
 @media screen and (max-width: 767px) {
   .wrapper .header-wrap {
     display: none;
@@ -364,7 +411,7 @@ select option {
     height: 80px;
     min-width: 180px;
     margin: 13px 0 0 0;
-    left: -220px;
+    left: -210px;
   }
   .wrapper .group-info-block .group-number span {
     font-size: 30px;
@@ -400,7 +447,7 @@ select option {
     position: relative;
   }
   .wrapper .tasks-screenshots-block .topics-block {
-    left: -225px;
+    left: -220px;
     position: absolute;
     height: 100%;
     top: 0px;
@@ -474,14 +521,4 @@ select option {
     min-width: 220px;
     min-height: 150px;
   }
-}
-.screenshot-full-size {
-  overflow: auto;
-  width: 70%;
-}
-.screenshot-full-size .screenshot-coments-block .screenshot-big-size {
-  overflow: auto;
-}
-.screenshot-full-size .screenshot-coments-block .screenshot-big-size img {
-  width: auto;
 }

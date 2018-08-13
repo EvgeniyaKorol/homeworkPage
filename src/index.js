@@ -7,8 +7,12 @@ import GroupSelector from "./groupSelector";
 import StudentsArray from "./studentsArray";
 import Topics from './topics';
 import ScreenshotsArea from './screenshotsArea';
-import StudentScrenshotsPopup from './screenshotsPopup';
+import StudentScrenshotsPopup from './studentScreenshotsPopup';
 import {store} from './redux/store';
+import TaskHeader from "./taskHeader";
+import TaskInformation from "./taskInformation";
+import CommentsBlock from "./commentsBlock"
+import TestPage from "./components/testPage/testPageComponent"
 
 
 let state = store.getState();

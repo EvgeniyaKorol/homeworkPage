@@ -1,7 +1,3 @@
-/**
- * Created by Eugenia on 06.07.2018.
- */
-
 import React, {Component} from 'react';
 import Student from './student';
 class StudentsArray extends Component {

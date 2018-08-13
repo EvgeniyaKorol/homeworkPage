@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import logo from './assets/images/logo.png';
 
-class Header extends Component {
+class TaskHeader extends Component {
 
     constructor(props) {
         super(props);
@@ -10,14 +10,9 @@ class Header extends Component {
 
     render() {
         return (
-            <div className="header-wrap">
-                <div className="header">
-                    <select className="title">
-                        <option>homework</option>
-                        <option>video</option>
-                        <option>visits</option>
-                        <option>test</option>
-                    </select>
+            <div className="task-header-wrap">
+                <div className="task-header">
+                    <span className="task-title">task-1</span>
                     <div className="logo">
                         <a href="">
                             <img src={logo} alt="logo"/>
@@ -29,5 +24,5 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default TaskHeader;
 
