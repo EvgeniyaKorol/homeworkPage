@@ -7,10 +7,9 @@ class ScreenshotItem extends Component {
     }
 
     render() {
-        var {screen} = this.props
         return (
                 <div className="screenshot-item">
-                    <img src={screen.src} alt="" className="screenshot"/>
+                    <img src={this.props.screen.src} alt="" className="screenshot"/>
                 </div>
         );
     }

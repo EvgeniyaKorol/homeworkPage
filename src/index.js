@@ -68,13 +68,13 @@ debugger;
 
                 </div>
                 <div className="screenshots-block">
-                    <ScreenshotsArea screenShots={students[0].screenshots.map(s => {
-                        return {
-                            taskId: s.taskId,
-                            src: s.src
-                        }
-                    })}
-                    />
+                    {
+                        students.map(s => {
+                            return (<ScreenshotsArea screenshots={s.screenshots} store={store}
+                            />)
+                        })
+                    }
+
                 </div>
             </div>
 

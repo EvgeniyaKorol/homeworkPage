@@ -219,11 +219,6 @@ const initialGroupState = List([
                     taskId: '1',
                     src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
                     date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
                 }
             ]
         },
@@ -232,16 +227,7 @@ const initialGroupState = List([
             name: 'Николай Никонов',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
             screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
+
             ]
         },
         {

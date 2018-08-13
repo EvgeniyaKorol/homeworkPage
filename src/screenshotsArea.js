@@ -9,19 +9,29 @@ class ScreenshotsArea extends Component {
     }
 
     render() {
+        let screens = this.props.screenshots.map(s => {
+            return {
+                src: s.src,
+                taskId: s.taskId
+            }
+        });
+
+        const items = screens.length > 0
+            ?  screens.map(s => {
+            return (<ScreenshotItem screen={s}/>)
+        })
+            : <EmptyScreenshot/>;
+
         return (
         <div className="screenshots-wrap">
             <div className="screenshots">
-                {this.props.screenShots.map(s => {
-                    return (
-                        <ScreenshotItem screen={s} />
-                    )
-                })}
-                <EmptyScreenshot/>
-                <EmptyScreenshot/>
-                <EmptyScreenshot/>
-                <EmptyScreenshot/>
-                <EmptyScreenshot/>
+                {items}
+
+                {/*<EmptyScreenshot/>*/}
+                {/*<EmptyScreenshot/>*/}
+                {/*<EmptyScreenshot/>*/}
+                {/*<EmptyScreenshot/>*/}
+                {/*<EmptyScreenshot/>*/}
             </div>
         </div>
         );
