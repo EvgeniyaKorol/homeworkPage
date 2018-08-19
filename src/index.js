@@ -25,7 +25,7 @@ store.subscribe(() => {
 
 
 function render() {
-debugger;
+    debugger
     let selectedCourse = state.uiState.get('selectedCourseId');
     let selectedGroup = state.uiState.get('selectedGroupId');
     let group =  state.groups.filter(g => g.get("id") == selectedGroup).get(0);
@@ -68,14 +68,24 @@ debugger;
                             tasks: t.tasks
                         }
                     })}/>
+            </div>
 
+                {/*<div className="screenshots-block">*/}
+                    {/*{*/}
+                        {/*students.map(s => {*/}
+                            {/*return (<ScreenshotsArea screenshots={s.screenshots} store={store}*/}
+                            {/*/>)*/}
+                        {/*})*/}
+                    {/*}*/}
 
-                </div>
+                {/*</div>*/}
                 <div className="screenshots-block">
+
                     {
                         students.map(s => {
-                            return (<ScreenshotsArea screenshots={s.screenshots} store={store}
-                            />)
+                            return (
+                                <ScreenshotsArea topics={!!s.topics ? s.topics : []} store={store}/>
+                            )
                         })
                     }
 
