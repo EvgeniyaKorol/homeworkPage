@@ -5,6 +5,11 @@ class Topics extends Component {
 
     constructor(props) {
         super(props);
+        this.tasksDisplay = this.tasksDisplay.bind(this);
+    }
+
+    tasksDisplay (){
+
     }
 
     render() {
@@ -14,7 +19,7 @@ class Topics extends Component {
                 return (
                     <div className="topics">
                         <div className="topic">
-                            <span>{t.name}</span>
+                            <span onClick={this.tasksDisplay}>{t.name}</span>
                         </div>
 
                         {t.tasks.map(tsk => {

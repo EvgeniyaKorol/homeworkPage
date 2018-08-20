@@ -14,179 +14,211 @@ const initialGroupState = List([
             id: '1',
             name: 'Евгения Король',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
+            topics: [
                 {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
+                    id: '1',
+                    name: 'html',
+                    tasks: [
+                        {
+                            id: '1',
+                            name: 'Введение',
+                            screenshots: [
+                                {
+                                    taskId: '1',
+                                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                                    date: null
+                                }
+                            ]
+                        },
+                        {
+                            id: '2',
+                            name: 'Страничка ВК',
+                            screenshots: [
+                                {
+                                    taskId: '2',
+                                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                                    date: null
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-
         },
         {
             id: '2',
             name: '4 Дмитрий Кузюбердин',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
+            topics: [
                 {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '3',
-            name: 'Александра Зверко',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '4',
-            name: 'Кирилл Ашуркевич',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '5',
-            name: 'Денис Нестерук',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '6',
-            name: 'Максим Даникович',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '7',
-            name: 'Артем Пиврик',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '8',
-            name: 'Артем Феденков',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '9',
-            name: 'Дмитрий Сугако',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
-        },
-        {
-            id: '10',
-            name: 'Александра Зверко',
-            avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
-            screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
-            ]
+                    id: '1',
+                    name: 'html',
+                    tasks: [
+                        {
+                            id: '1',
+                            name: 'Введение',
+                            screenshots: [
+                                {
+                                    taskId: '1',
+                                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                                    date: null
+                                }
+                            ]
+
+                        },
+                        {
+                            id: '2',
+                            name: 'Страничка ВК',
+                            screenshots: [
+                                {
+                                    taskId: '2',
+                                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+                                    date: null
+                                }
+                            ]
+                        }
+                    ]
+                }]
         }
+        // {
+        //     id: '3',
+        //     name: 'Александра Зверко',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '4',
+        //     name: 'Кирилл Ашуркевич',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '5',
+        //     name: 'Денис Нестерук',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '6',
+        //     name: 'Максим Даникович',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '7',
+        //     name: 'Артем Пиврик',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '8',
+        //     name: 'Артем Феденков',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '9',
+        //     name: 'Дмитрий Сугако',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // },
+        // {
+        //     id: '10',
+        //     name: 'Александра Зверко',
+        //     avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png',
+        //     screenshots: [
+        //         {
+        //             taskId: '1',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         },
+        //         {
+        //             taskId: '2',
+        //             src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
+        //             date: null
+        //         }
+        //     ]
+        // }
     ]}),
+
+
     Map ({
         id: '2',
         name: '1',
@@ -219,11 +251,6 @@ const initialGroupState = List([
                     taskId: '1',
                     src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
                     date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
                 }
             ]
         },
@@ -232,16 +259,7 @@ const initialGroupState = List([
             name: 'Николай Никонов',
             avatar: 'http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-business-bear.png',
             screenshots: [
-                {
-                    taskId: '1',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                },
-                {
-                    taskId: '2',
-                    src: 'https://blog.mozilla.org/wp-content/uploads/2017/09/screenshots-onboarding-231-1400x720.png',
-                    date: null
-                }
+
             ]
         },
         {
