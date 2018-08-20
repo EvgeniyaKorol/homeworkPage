@@ -20,6 +20,9 @@ body {
 .none-visible {
   display: none !important;
 }
+.show {
+  display: block !important;
+}
 .not-active {
   background-color: #d5d5d5 !important;
   color: #ececec !important;
@@ -87,6 +90,7 @@ select option {
   flex-direction: row;
   min-height: 210px;
   padding-top: 20px;
+  overflow-x: hidden;
 }
 .wrapper .group-info-block .group-number {
   display: flex;
@@ -143,6 +147,7 @@ select option {
   align-items: center;
   width: 75px;
   margin: 20px;
+  margin-right: 30px;
 }
 .wrapper .group-info-block .group-info-wrap .student-info .student .avatar img {
   width: 75px;
@@ -304,6 +309,7 @@ select option {
   top: 0;
   right: 0;
   margin: 5px;
+  background-image: url(../assets/images/close-btn.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;

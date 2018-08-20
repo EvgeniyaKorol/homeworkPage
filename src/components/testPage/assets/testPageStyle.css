@@ -1,0 +1,70 @@
+.test-page-wrapper {
+  display: flex;
+  width: 100%;
+}
+.test-page-wrapper .task-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  width: 350px;
+  min-width: 240px;
+  margin: 30px 0 0 45px;
+  background-color: #fff;
+}
+.test-page-wrapper .task-header-wrapper .task-header {
+  display: flex;
+  flex-direction: column;
+}
+.test-page-wrapper .task-header-wrapper .task-header span {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+.test-page-wrapper .task-header-wrapper .task-header input.test-subject,
+.test-page-wrapper .task-header-wrapper .task-header p {
+  margin: 15px 0;
+  font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: #fff;
+  font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons .next-question-btn {
+  width: 160px;
+  height: 45px;
+  background-color: #35375c;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons .next-question-btn:hover {
+  background-color: #404473;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons .finish-test-btn {
+  width: 120px;
+  height: 45px;
+  background-color: #ed1c24;
+  border-radius: 3px;
+}
+.test-page-wrapper .task-header-wrapper .main-buttons .finish-test-btn:hover {
+  background-color: #fc333a;
+}
+.test-page-wrapper .group-info-block .group-info-wrap {
+  display: flex;
+}
+.test-page-wrapper .group-info-block .group-info-wrap .add-student {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  border: 1px dashed #aeaeae;
+  border-radius: 50px;
+}

@@ -25,7 +25,7 @@ store.subscribe(() => {
 
 
 function render() {
-debugger;
+//debugger;
     let selectedCourse = state.uiState.get('selectedCourseId');
     let selectedGroup = state.uiState.get('selectedGroupId');
     let group =  state.groups.filter(g => g.get("id") == selectedGroup).get(0);
@@ -49,7 +49,8 @@ debugger;
     ReactDOM.render(
         <div className="wrapper">
             <Header/>
-            <div className="group-info-block">
+            <TestPage/>
+            {/* <div className="group-info-block">
                 <GroupSelector courses={coursesForSelector} groups={groupsForSelector} store={store} />
                 <StudentsArray students={students.map(s => {
                     return {
@@ -80,7 +81,7 @@ debugger;
                     })}
                     />
                 </div>
-            </div>
+            </div> */}
 
             {/* <StudentScrenshotsPopup/> */}
         </div>, document.getElementById('root'));

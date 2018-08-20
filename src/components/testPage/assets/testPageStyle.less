@@ -1,0 +1,81 @@
+.test-page-wrapper {
+    display: flex;
+    width: 100%;
+    .task-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 180px;
+        width: 350px;
+        min-width: 240px; // border-top: 1px solid #333366;
+        // border-bottom: 1px solid #333366;
+        // border-right: 1px solid #333366;
+        // border-radius: 0 7px 7px 0;
+        margin: 30px 0 0 45px;
+        background-color: #fff;
+        .task-header {
+            display: flex;
+            flex-direction: column;
+            span {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 16px;
+            }
+            input.test-subject, p {
+                margin: 15px 0; 
+                font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+            }
+        }
+        .main-buttons {
+            display: flex;
+            justify-content: space-between;
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                border-radius: 3px;
+                color: #fff;
+                font-family: Century Gothic, 'EngraversGothic BT', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+            .next-question-btn {
+                width: 160px;
+                height: 45px;
+                background-color: #35375c;
+                margin-right: 20px;
+                font-size: 18px;
+                &:hover {
+                    background-color: #404473;  //?????????
+                }
+            }
+            .finish-test-btn {
+                width: 120px;
+                height: 45px;
+                background-color: #ed1c24;
+                border-radius: 3px;
+                &:hover {
+                    background-color:  #fc333a;  //?????????
+                }
+            }
+        }
+    }
+    .group-info-block {
+        .group-info-wrap {
+            display: flex;
+            .add-student {
+                display: flex;
+                //justify-content: center;
+                width: 75px;
+                height: 75px;
+                border: 1px dashed #aeaeae;
+                border-radius: 50px; //margin-right: 50px !important;
+            }
+            .student-info {
+                .student {
+                    .remove-student {}
+                }
+            }
+        }
+    }
+}
