@@ -7,9 +7,13 @@ class ScreenshotItem extends Component {
     }
 
     render() {
+        debugger;
         return (
                 <div className="screenshot-item">
-                    <img src={this.props.screen.src} alt="" className="screenshot"/>
+                    {this.props.screens.length} screens
+
+
+
                 </div>
         );
     }

@@ -10,14 +10,20 @@ class ScreenshotsArea extends Component {
     }
 
     render() {
-    debugger
         let elements = this.props.topics.map(topic => {
             let tasks = topic.tasks;
-            let topicElement = <TopicItem total={tasks.length} count={1}/>;
-            let screenshots = tasks.map(task => {return task.screenshots});
-            let tasksEls = screenshots.length>0
-                ? screenshots.map(s => {return (<ScreenshotItem screen={s}/>)})
-                : <EmptyScreenshot/>;
+
+
+            let tasksWithAtLeastOneScreenshotCount =  tasks.filter(task => task.screenshots.length > 0 ).length;
+            let topicElement = <TopicItem total={tasks.length} count={tasksWithAtLeastOneScreenshotCount}/>;
+
+
+            let tasksScreenshots = tasks.map(task => task.screenshots);
+
+            let tasksEls = tasksScreenshots.map(s => {
+                return s.length > 0 ? <ScreenshotItem screens={s} /> : <EmptyScreenshot/>;
+            });
+
             return <React.Fragment> {topicElement} {tasksEls}</React.Fragment>
         });
 

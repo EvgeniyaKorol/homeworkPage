@@ -8,7 +8,9 @@ class TopicItem extends Component {
     render() {
         return (
 
-                   <div>{this.props.count} / {this.props.total}</div>
+                   <div className="screenshot-item">
+                        {this.props.count} / {this.props.total}
+                        </div>
             )
 
     }

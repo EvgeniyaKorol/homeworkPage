@@ -3,6 +3,7 @@
  */
 import * as groupTypes from './groupActionTypes';
 import * as types from './courseActionTypes';
+import * as topicTypes from './topicActionTypes';
 
 export function changeCourse(id) {
     return {
@@ -14,6 +15,13 @@ export function changeCourse(id) {
 export function changeGroup(id) {
     return {
         type: groupTypes.CHANGE_GROUP,
+        id
+    }
+}
+
+export function displayTasks (id) {
+    return {
+        type: topicTypes.TOGGLE_TOPICS,
         id
     }
 }

@@ -49,9 +49,9 @@ function render() {
     ReactDOM.render(
         <div className="wrapper">
             <Header/>
-            <TestPage/>
+            {/*<TestPage/>*/}
             
-            {/* <div className="group-info-block">
+             <div className="group-info-block">
                 <GroupSelector courses={coursesForSelector} groups={groupsForSelector} store={store} />
                 <StudentsArray students={students.map(s => {
                     return {
@@ -64,23 +64,28 @@ function render() {
 
             <div className="tasks-screenshots-block">
                 <div className="topics-block">
-                    <Topics topics={state.topics.map(t => {
-                        return {
-                            name: t.name,
-                            tasks: t.tasks
-                        }
-                    })}/>
+                    <Topics topics={state.topics.map(v => {
+                        const obj = {
+                            name: v.get('name'),
+                            tasks: v.get('tasks'),
+                            expanded: v.get('expanded'),
+                            id: v.get('id')
+                        };
+                        return obj;
+                    })}
+
+                    //     .map(t => {
+                    //     return {
+                    //         name: t.name,
+                    //         tasks: t.tasks,
+                    //         expanded: t.expanded,
+                    //         id: t.id
+                    //     }
+                    // })
+
+                     store={store}/>
             </div>
 
-                <div className="screenshots-block">
-                    {
-                        students.map(s => {
-                            return (<ScreenshotsArea screenshots={s.screenshots} store={store}
-                            />)
-                        })
-                    }
-
-                </div>
                 <div className="screenshots-block">
 
                     {
@@ -92,7 +97,7 @@ function render() {
                         }
 
                 </div>
-            </div> */}
+            </div>
 
             {/* <StudentScrenshotsPopup/> */}
         </div>, document.getElementById('root'));
